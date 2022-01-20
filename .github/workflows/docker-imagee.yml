@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag 9913/sampleapplication:$(date+%s) 
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/9913/sampleapplication
+      run: docker push ${{secrets.DOCKER_USER}}/sampleapplication
